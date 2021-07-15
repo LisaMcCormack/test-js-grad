@@ -10,6 +10,9 @@
 // Average and worst case time complexity (Big-O) of my function is:
 // Explain:
 
+const check = require('check-types');
+
 module.exports = function sortArray(arr) {
-  // TODO
+  check.assert.array.of.integer(arr)
+  return arr.sort((a, b) => a - b)
 };
